@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Muhammad Jamshed | Academic Consultant & Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .navy-bg {
+            background-color: #001f3f;
+        }
+        .gold-text {
+            color: #D4AF37;
+        }
+        .gold-bg {
+            background-color: #D4AF37;
+        }
+        .navy-text {
+            color: #001f3f;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial-card:hover {
+            transform: scale(1.02);
+        }
+        .modal {
+            transition: all 0.3s ease;
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Hero Section -->
+    <header class="navy-bg text-white">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold gold-text">Dr. Jamshed</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:gold-text">Home</a>
+                <a href="#about" class="hover:gold-text">About</a>
+                <a href="#services" class="hover:gold-text">Services</a>
+                <a href="#testimonials" class="hover:gold-text">Testimonials</a>
+                <a href="#contact" class="hover:gold-text">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden navy-bg px-6 py-4">
+            <a href="#home" class="block py-2 hover:gold-text">Home</a>
+            <a href="#about" class="block py-2 hover:gold-text">About</a>
+            <a href="#services" class="block py-2 hover:gold-text">Services</a>
+            <a href="#testimonials" class="block py-2 hover:gold-text">Testimonials</a>
+            <a href="#contact" class="block py-2 hover:gold-text">Contact</a>
+        </div>
+
+        <div id="home" class="container mx-auto px-6 py-20 md:py-32 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Dr. Muhammad Jamshed</h1>
+                <h2 class="text-xl md:text-2xl gold-text mb-6">Ph.D. | Software Engineer | Academic Consultant | Professor</h2>
+                <p class="text-lg mb-8">Expert academic support for assignments, projects, and exams in computer science, engineering, and business fields.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="https://wa.me/923029015909" class="gold-bg navy-text px-6 py-3 rounded-lg font-semibold text-center hover:bg-yellow-600 transition duration-300">
+                        <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
+                    </a>
+                    <a href="#contact" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-center hover:bg-white hover:navy-text transition duration-300">
+                        Book Consultation
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+               <div class="relative">
+  <div class="w-64 h-64 md:w-80 md:h-80 bg-gray-300 rounded-full overflow-hidden border-4 border-yellow-500">
+    <img
+      src="jamshed.jpeg"
+      alt="Profile"
+      class="w-full h-full object-cover rounded-full"
+    />
+  </div>
+</div>
+
+                    <div class="absolute  right-24 bg-white navy-text px-4 py-2 rounded-lg shadow-lg">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone-alt gold-text mr-2"></i>
+                            <span>+92 302 9015909</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto px-6 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold navy-text mb-4">About Me</h2>
+            <div class="w-20 h-1 gold-bg mx-auto"></div>
+        </div>
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8 md:p-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <div class="relative">
+  <div class="w-64 h-64 md:w-80 md:h-80 bg-gray-300 rounded-full overflow-hidden border-4 border-yellow-500">
+    <img
+      src="jamshed2.jpeg"
+      alt="Profile"
+      class="w-full h-full object-cover rounded-full"
+    />
+  </div>
+</div>
+
+                </div>
+                <div class="md:w-2/3 md:pl-10">
+                    <blockquote class="text-lg italic navy-text mb-6">
+                        "I'm Dr. Muhammad Jamshed, a Ph.D. holder and senior professor with vast experience in academic consulting and software development. Over the years, I've guided thousands of students from the UK, USA, Canada, and Gulf regions through expert-level assignments, programming, and business education projects."
+                    </blockquote>
+                    <p class="navy-text mb-4">
+                        I lead a specialized team, excluding civil/mechanical domains, that covers a wide variety of academic disciplines with a satisfaction-first approach.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mt-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-graduation-cap gold-text mr-2"></i>
+                            <span>Ph.D. in Computer Science</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-university gold-text mr-2"></i>
+                            <span>Senior Professor</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-globe gold-text mr-2"></i>
+                            <span>International Students</span>
+                        </div>
+                    </div>
+                    <div class="mt-8 flex space-x-4">
+                        <a href="mailto:jamshedmsd589@gmail.com" class="flex items-center navy-bg text-white px-4 py-2 rounded-lg hover:bg-blue-800">
+                            <i class="fas fa-envelope mr-2"></i> Email Me
+                        </a>
+                        <a href="#" class="flex items-center border navy-text border-navy-500 px-4 py-2 rounded-lg hover:bg-gray-100">
+                            <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container mx-auto px-6 py-16 bg-gray-100">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold navy-text mb-4">Academic Services</h2>
+            <div class="w-20 h-1 gold-bg mx-auto"></div>
+            <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Expert support for assignments, projects, and exams across multiple disciplines</p>
+        </div>
+
+        <!-- Service Filter -->
+        <div class="max-w-4xl mx-auto mb-12">
+            <div class="flex flex-wrap justify-center gap-2">
+                <button onclick="filterServices('all')" class="filter-btn active px-4 py-2 rounded-full navy-bg text-white">All Services</button>
+                <button onclick="filterServices('cs')" class="filter-btn px-4 py-2 rounded-full border navy-text border-gray-300 hover:navy-bg hover:text-white">Computer Science</button>
+                <button onclick="filterServices('ee')" class="filter-btn px-4 py-2 rounded-full border navy-text border-gray-300 hover:navy-bg hover:text-white">Electrical/Electronics</button>
+                <button onclick="filterServices('business')" class="filter-btn px-4 py-2 rounded-full border navy-text border-gray-300 hover:navy-bg hover:text-white">Business</button>
+                <button onclick="filterServices('exam')" class="filter-btn px-4 py-2 rounded-full border navy-text border-gray-300 hover:navy-bg hover:text-white">Exam Help</button>
+                <button onclick="filterServices('other')" class="filter-btn px-4 py-2 rounded-full border navy-text border-gray-300 hover:navy-bg hover:text-white">Others</button>
+            </div>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Computer Science Services -->
+            <div class="service-card cs bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center text-white mr-4">
+                            <i class="fas fa-laptop-code text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold navy-text">Python Assignments</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Expert Python programming help for all academic levels, from basic scripts to advanced algorithms and data science projects.</p>
+                    <button onclick="openModal('python-modal')" class="text-sm gold-text font-semibold hover:underline">View Details →</button>
+                </div>
+            </div>
+
+            <div class="service-card cs bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center text-white mr-4">
+                            <i class="fas fa-database text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold navy-text">SQL/MySQL Tasks</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Database design, complex queries, normalization, and implementation for academic projects and real-world applications.</p>
+                    <button onclick="openModal('sql-modal')" class="text-sm gold-text font-semibold hover:underline">View Details →</button>
+                </div>
+            </div>
+
+            <div class="service-card cs bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center text-white mr-4">
+                            <i class="fas fa-brain text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold navy-text">Machine Learning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">From basic regression models to advanced neural networks, we cover all ML concepts with proper documentation.</p>
+                    <button onclick="openModal('ml-modal')" class="text-sm gold-text font-semibold hover:underline">View Details →</button>
+                </div>
+            </div>
+
+            <!-- Electrical/Electronics Services -->
+            <div class="service-card ee bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center text-white mr-4">
+                            <i class="fas fa-microchip text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold navy-text">Arduino Projects</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Complete Arduino-based projects with coding, circuit design, and comprehensive documentation for academic submissions.</p>
+                    <button onclick="openModal('arduino-modal')" class="text-sm gold-text font-semibold hover:underline">View Details →</button>
+                </div>
+            </div>
+
+            <div class="service-card ee bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center text-white mr-4">
+                            <i class="fas fa-project-diagram text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold navy-text">Circuit Design</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Professional circuit design and simulation using tools like Proteus, Multisim, and MATLAB with detailed analysis.</p>
+                    <button onclick="openModal('circuit-modal')" class="text-sm gold-text font-semibold hover:underline">View Details →</button>
+                </div>
+            </div>
+
+            <!-- Business Services -->
+            <div class="service-card business bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center text-white mr-4">
+                            <i class="fas fa-chart-line text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold navy-text">MBA Case Studies</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Comprehensive business case analysis with strategic recommendations, financial modeling, and professional formatting.</p>
+                    <button onclick="openModal('mba-modal')" class="text-sm gold-text font-semibold hover:underline">View Details →</button>
+                </div>
+            </div>
+
+            <div class="service-card business bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center text-white mr-4">
+                            <i class="fas fa-file-invoice-dollar text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold navy-text">Finance Assignments</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Financial analysis, ratio calculations, investment appraisal, and corporate finance problems with Excel solutions.</p>
+                    <button onclick="openModal('finance-modal')" class="text-sm gold-text font-semibold hover:underline">View Details →</button>
+                </div>
+            </div>
+
+            <!-- Exam Help -->
+            <div class="service-card exam bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center text-white mr-4">
+                            <i class="fas fa-clock text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold navy-text">Timed Quizzes</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Real-time support for online quizzes and timed assessments with guaranteed accuracy and confidentiality.</p>
+                    <button onclick="openModal('quiz-modal')" class="text-sm gold-text font-semibold hover:underline">View Details →</button>
+                </div>
+            </div>
+
+            <!-- Other Services -->
+            <div class="service-card other bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center text-white mr-4">
+                            <i class="fas fa-graduation-cap text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold navy-text">Final Year Projects</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">End-to-end final year project support including proposal, implementation, documentation, and presentation.</p>
+                    <button onclick="openModal('fyp-modal')" class="text-sm gold-text font-semibold hover:underline">View Details →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="navy-bg text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">How It Works</h2>
+                <div class="w-20 h-1 gold-bg mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white navy-text p-6 rounded-lg shadow-lg text-center">
+                    <div class="w-16 h-16 gold-bg text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-hand-holding-usd text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">No Advance Payment</h3>
+                    <p>Pay only after reviewing and approving the completed work.</p>
+                </div>
+                
+                <div class="bg-white navy-text p-6 rounded-lg shadow-lg text-center">
+                    <div class="w-16 h-16 gold-bg text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lock text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">100% Confidential</h3>
+                    <p>Your information and our collaboration remain strictly private.</p>
+                </div>
+                
+                <div class="bg-white navy-text p-6 rounded-lg shadow-lg text-center">
+                    <div class="w-16 h-16 gold-bg text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-eye text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Free Demo</h3>
+                    <p>Request a sample before committing to ensure our quality.</p>
+                </div>
+                
+                <div class="bg-white navy-text p-6 rounded-lg shadow-lg text-center">
+                    <div class="w-16 h-16 gold-bg text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Referral Bonus</h3>
+                    <p>Earn commission when you refer friends and colleagues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="container mx-auto px-6 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold navy-text mb-4">Student Testimonials</h2>
+            <div class="w-20 h-1 gold-bg mx-auto"></div>
+            <p class="mt-4 text-gray-600 max-w-2xl mx-auto">What students from around the world say about our services</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card bg-white rounded-xl shadow-md p-6 transition duration-300">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center text-white mr-4">
+                        <i class="fas fa-user text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold navy-text">Rohit Sharma</h4>
+                        <p class="text-sm text-gray-500">India</p>
+                    </div>
+                </div>
+                <div class="gold-text mb-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-600 italic">
+                    "Dr. Jamshed saved my final year project with his amazing Python support! The code was well-commented and the documentation was perfect."
+                </p>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card bg-white rounded-xl shadow-md p-6 transition duration-300">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center text-white mr-4">
+                        <i class="fas fa-user text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold navy-text">Emily Johnson</h4>
+                        <p class="text-sm text-gray-500">USA</p>
+                    </div>
+                </div>
+                <div class="gold-text mb-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-600 italic">
+                    "Best academic help I ever received. Highly recommended for MBA work. My strategic management case study got an A+."
+                </p>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card bg-white rounded-xl shadow-md p-6 transition duration-300">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center text-white mr-4">
+                        <i class="fas fa-user text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold navy-text">Ahmed Khan</h4>
+                        <p class="text-sm text-gray-500">Pakistan</p>
+                    </div>
+                </div>
+                <div class="gold-text mb-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-600 italic">
+                    "The electrical project was on point. Even my professor praised the circuit design and simulation results."
+                </p>
+            </div>
+            
+            <!-- Testimonial 4 -->
+            <div class="testimonial-card bg-white rounded-xl shadow-md p-6 transition duration-300">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center text-white mr-4">
+                        <i class="fas fa-user text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold navy-text">Zara Malik</h4>
+                        <p class="text-sm text-gray-500">UK</p>
+                    </div>
+                </div>
+                <div class="gold-text mb-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-600 italic">
+                    "Got full marks in my AI assignment. Thank you, sir! The neural network implementation was flawless."
+                </p>
+            </div>
+            
+            <!-- Testimonial 5 -->
+            <div class="testimonial-card bg-white rounded-xl shadow-md p-6 transition duration-300">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center text-white mr-4">
+                        <i class="fas fa-user text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold navy-text">David Smith</h4>
+                        <p class="text-sm text-gray-500">Canada</p>
+                    </div>
+                </div>
+                <div class="gold-text mb-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-600 italic">
+                    "My SQL and business case study were handled with perfection. The ER diagrams were professionally done."
+                </p>
+            </div>
+            
+            <!-- Testimonial 6 -->
+            <div class="testimonial-card bg-white rounded-xl shadow-md p-6 transition duration-300">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center text-white mr-4">
+                        <i class="fas fa-user text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold navy-text">Fatima Noor</h4>
+                        <p class="text-sm text-gray-500">UAE</p>
+                    </div>
+                </div>
+                <div class="gold-text mb-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-600 italic">
+                    "He provides detailed feedback and delivery is always on time. My marketing research paper was excellent."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="navy-bg text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+                <div class="w-20 h-1 gold-bg mx-auto"></div>
+                <p class="mt-4 max-w-2xl mx-auto">Contact me directly for academic support or to discuss your project requirements</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 navy-bg p-8 flex flex-col justify-center">
+                        <h3 class="text-2xl font-semibold gold-text mb-6">Contact Information</h3>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="gold-text mr-4 mt-1">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold gold-text mb-1">Phone</h4>
+                                <p class="text-white">+92 302 9015909</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="gold-text mr-4 mt-1">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold gold-text mb-1">Email</h4>
+                                <p class="text-white">jamshedmsd589@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="gold-text mr-4 mt-1">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold gold-text mb-1">WhatsApp</h4>
+                                <a href="https://wa.me/923029015909" class="text-white hover:underline">Chat Now</a>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-semibold gold-text mb-4">Follow Me</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 rounded-full border border-gold-500 gold-text flex items-center justify-center hover:bg-gold-500 hover:text-white">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full border border-gold-500 gold-text flex items-center justify-center hover:bg-gold-500 hover:text-white">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full border border-gold-500 gold-text flex items-center justify-center hover:bg-gold-500 hover:text-white">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 bg-gray-50 p-8">
+                        <h3 class="text-2xl font-semibold navy-text mb-6">Send a Message</h3>
+                        <form id="contact-form">
+                            <div class="mb-4">
+                                <label for="name" class="block navy-text font-medium mb-2">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500" required>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="email" class="block navy-text font-medium mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500" required>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="subject" class="block navy-text font-medium mb-2">Subject</label>
+                                <input type="text" id="subject" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500" required>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block navy-text font-medium mb-2">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500" required></textarea>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <button type="submit" class="gold-bg navy-text px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300">
+                                    Send Message
+                                </button>
+                                <span class="ml-4 text-sm text-gray-600">or <a href="https://wa.me/923029015909" class="gold-text font-semibold hover:underline">chat on WhatsApp</a></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold gold-text mb-4">Dr. Jamshed</h3>
+                    <p class="mb-4">Ph.D. | Software Engineer | Academic Consultant | Professor</p>
+                    <p>Expert academic support for students worldwide.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold gold-text mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:gold-text">Home</a></li>
+                        <li><a href="#about" class="hover:gold-text">About</a></li>
+                        <li><a href="#services" class="hover:gold-text">Services</a></li>
+                        <li><a href="#testimonials" class="hover:gold-text">Testimonials</a></li>
+                        <li><a href="#contact" class="hover:gold-text">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold gold-text mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:gold-text">Computer Science</a></li>
+                        <li><a href="#" class="hover:gold-text">Electrical Engineering</a></li>
+                        <li><a href="#" class="hover:gold-text">Business Studies</a></li>
+                        <li><a href="#" class="hover:gold-text">Exam Help</a></li>
+                        <li><a href="#" class="hover:gold-text">Final Year Projects</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold gold-text mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="w-10 h-10 rounded-full border border-gold-500 gold-text flex items-center justify-center hover:bg-gold-500 hover:text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full border border-gold-500 gold-text flex items-center justify-center hover:bg-gold-500 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full border border-gold-500 gold-text flex items-center justify-center hover:bg-gold-500 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/923029015909" class="w-10 h-10 rounded-full border border-gold-500 gold-text flex items-center justify-center hover:bg-gold-500 hover:text-white">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    <p><i class="fas fa-phone-alt gold-text mr-2"></i> +92 302 9015909</p>
+                    <p class="mt-2"><i class="fas fa-envelope gold-text mr-2"></i> jamshedmsd589@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Dr. Muhammad Jamshed. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Modals -->
+    <!-- Python Modal -->
+    <div id="python-modal" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-2xl font-bold navy-text">Python Assignments</h3>
+                    <button onclick="closeModal('python-modal')" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-laptop-code text-5xl text-gray-500"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Expert Python programming assistance for all academic levels, from introductory scripts to advanced algorithms and data science projects.
+                    </p>
+                    
+                    <h4 class="font-semibold navy-text mb-2">What We Cover:</h4>
+                    <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+                        <li>Basic Python programming and scripting</li>
+                        <li>Data structures and algorithms implementation</li>
+                        <li>Object-oriented programming concepts</li>
+                        <li>Data analysis with Pandas and NumPy</li>
+                        <li>Data visualization with Matplotlib and Seaborn</li>
+                        <li>Web scraping and automation</li>
+                        <li>Django/Flask web applications</li>
+                        <li>Machine learning implementations</li>
+                    </ul>
+                    
+                    <h4 class="font-semibold navy-text mb-2">Delivery Includes:</h4>
+                    <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+                        <li>Well-commented source code</li>
+                        <li>Comprehensive documentation</li>
+                        <li>Execution instructions</li>
+                        <li>Sample input/output</li>
+                        <li>Video explanation (on request)</li>
+                    </ul>
+                </div>
+                
+                <div class="flex justify-between items-center pt-4 border-t">
+                    <div>
+                        <span class="text-lg font-semibold navy-text">Starting from $30</span>
+                        <p class="text-sm text-gray-500">Price varies based on complexity and urgency</p>
+                    </div>
+                    <a href="https://wa.me/923029015909?text=Hi%20Dr.%20Jamshed,%20I%20need%20help%20with%20Python%20Assignment." class="gold-bg navy-text px-6 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300">
+                        <i class="fab fa-whatsapp mr-2"></i> Order Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SQL Modal -->
+    <div id="sql-modal" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-2xl font-bold navy-text">SQL/MySQL Tasks</h3>
+                    <button onclick="closeModal('sql-modal')" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-database text-5xl text-gray-500"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Professional database design, complex queries, normalization, and implementation for academic projects and real-world applications.
+                    </p>
+                    
+                    <h4 class="font-semibold navy-text mb-2">What We Cover:</h4>
+                    <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+                        <li>Database design and normalization</li>
+                        <li>SQL queries of all complexity levels</li>
+                        <li>Stored procedures and functions</li>
+                        <li>Triggers and transactions</li>
+                        <li>Database security and user management</li>
+                        <li>Performance optimization</li>
+                        <li>ER diagram creation</li>
+                        <li>Database connectivity with applications</li>
+                    </ul>
+                    
+                    <h4 class="font-semibold navy-text mb-2">Delivery Includes:</h4>
+                    <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+                        <li>SQL script files</li>
+                        <li>Database schema documentation</li>
+                        <li>Query explanations</li>
+                        <li>Sample data (if required)</li>
+                        <li>ER diagrams in multiple formats</li>
+                    </ul>
+                </div>
+                
+                <div class="flex justify-between items-center pt-4 border-t">
+                    <div>
+                        <span class="text-lg font-semibold navy-text">Starting from $25</span>
+                        <p class="text-sm text-gray-500">Price varies based on complexity and urgency</p>
+                    </div>
+                    <a href="https://wa.me/923029015909?text=Hi%20Dr.%20Jamshed,%20I%20need%20help%20with%20SQL/MySQL%20Task." class="gold-bg navy-text px-6 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300">
+                        <i class="fab fa-whatsapp mr-2"></i> Order Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Machine Learning Modal -->
+    <div id="ml-modal" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-2xl font-bold navy-text">Machine Learning Projects</h3>
+                    <button onclick="closeModal('ml-modal')" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-brain text-5xl text-gray-500"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        From basic regression models to advanced neural networks, we cover all ML concepts with proper documentation and implementation.
+                    </p>
+                    
+                    <h4 class="font-semibold navy-text mb-2">What We Cover:</h4>
+                    <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+                        <li>Supervised learning (Regression, Classification)</li>
+                        <li>Unsupervised learning (Clustering, Dimensionality Reduction)</li>
+                        <li>Neural networks and deep learning</li>
+                        <li>Natural language processing</li>
+                        <li>Computer vision applications</li>
+                        <li>Model evaluation and optimization</li>
+                        <li>Feature engineering</li>
+                        <li>Deployment of ML models</li>
+                    </ul>
+                    
+                    <h4 class="font-semibold navy-text mb-2">Delivery Includes:</h4>
+                    <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+                        <li>Jupyter notebooks with complete code</li>
+                        <li>Dataset (if not provided)</li>
+                        <li>Detailed project report</li>
+                        <li>Model evaluation metrics</li>
+                        <li>Visualizations and explanations</li>
+                    </ul>
+                </div>
+                
+                <div class="flex justify-between items-center pt-4 border-t">
+                    <div>
+                        <span class="text-lg font-semibold navy-text">Starting from $50</span>
+                        <p class="text-sm text-gray-500">Price varies based on complexity and urgency</p>
+                    </div>
+                    <a href="https://wa.me/923029015909?text=Hi%20Dr.%20Jamshed,%20I%20need%20help%20with%20Machine%20Learning%20Project." class="gold-bg navy-text px-6 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300">
+                        <i class="fab fa-whatsapp mr-2"></i> Order Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Arduino Modal -->
+    <div id="arduino-modal" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-2xl font-bold navy-text">Arduino Projects</h3>
+                    <button onclick="closeModal('arduino-modal')" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-microchip text-5xl text-gray-500"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Complete Arduino-based projects with coding, circuit design, and comprehensive documentation for academic submissions.
+                    </p>
+                    
+                    <h4 class="font-semibold navy-text mb-2">What We Cover:</h4>
+                    <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+                        <li>Basic Arduino programming (C++)</li>
+                        <li>Sensor integration and data acquisition</li>
+                        <li>Motor control and robotics</li>
+                        <li>Wireless communication (Bluetooth, WiFi)</li>
+                        <li>IoT applications</li>
+                        <li>Home automation systems</li>
+                        <li>Data logging and visualization</li>
+                        <li>PCB design for Arduino projects</li>
+                    </ul>
+                    
+                    <h4 class="font-semibold navy-text mb-2">Delivery Includes:</h4>
+                    <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+                        <li>Complete Arduino sketch</li>
+                        <li>Circuit diagram/schematic</li>
+                        <li>Component list with specifications</li>
+                        <li>Project report with theory</li>
+                        <li>Working video demonstration</li>
+                    </ul>
+                </div>
+                
+                <div class="flex justify-between items-center pt-4 border-t">
+                    <div>
+                        <span class="text-lg font-semibold navy-text">Starting from $40</span>
+                        <p class="text-sm text-gray-500">Price varies based on complexity and urgency</p>
+                    </div>
+                    <a href="https://wa.me/923029015909?text=Hi%20Dr.%20Jamshed,%20I%20need%20help%20with%20Arduino%20Project." class="gold-bg navy-text px-6 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300">
+                        <i class="fab fa-whatsapp mr-2"></i> Order Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Circuit Design Modal -->
+    <div id="circuit-modal" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-2xl font-bold navy-text">Circuit Design</h3>
+                    <button onclick="closeModal('circuit-modal')" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-project-diagram text-5xl text-gray-500"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Professional circuit design and simulation using tools like Proteus, Multisim, and MATLAB with detailed analysis and documentation.
+                    </p>
+                    
+                    <h4 class="font-semibold navy-text mb-2">What We Cover:</h4>
+                    <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+                        <li>Analog and digital circuit design</li>
+                        <li>PCB layout and design</li>
+                        <li>Circuit simulation and analysis</li>
+                        <li>Power electronics circuits</li>
+                        <li>Filter design and implementation</li>
+                        <li>Op-amp based circuits</li>
+                        <li>Microcontroller interfacing circuits</li>
+                        <li>Signal conditioning circuits</li>
+                    </ul>
+                    
+                    <h4 class="font-semibold navy-text mb-2">Delivery Includes:</h4>
+                    <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+                        <li>Circuit schematic files</li>
+                        <li>Simulation results and waveforms</li>
+                        <li>Component calculations</li>
+                        <li>Bill of materials</li>
+                        <li>Detailed project report</li>
+                    </ul>
+                </div>
+                
+                <div class="flex justify-between items-center pt-4 border-t">
+                    <div>
+                        <span class="text-lg font-semibold navy-text">Starting from $35</span>
+                        <p class="text-sm text-gray-500">Price varies based on complexity and urgency</p>
+                    </div>
+                    <a href="https://wa.me/923029015909?text=Hi%20Dr.%20Jamshed,%20I%20need%20help%20with%20Circuit%20Design." class="gold-bg navy-text px-6 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300">
+                        <i class="fab fa-whatsapp mr-2"></i> Order Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MBA Modal -->
+    <div id="mba-modal" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-2xl font-bold navy-text">MBA Case Studies</h3>
+                    <button onclick="closeModal('mba-modal')" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-line text-5xl text-gray-500"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Comprehensive business case analysis with strategic recommendations, financial modeling, and professional formatting for MBA students.
+                    </p>
+                    
+                    <h4 class="font-semibold navy-text mb-2">What We Cover:</h4>
+                    <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+                        <li>Strategic management case studies</li>
+                        <li>Financial analysis and ratio calculations</li>
+                        <li>Marketing strategy development</li>
+                        <li>Operations management cases</li>
+                        <li>Human resource management cases</li>
+                        <li>International business scenarios</li>
+                        <li>SWOT, PESTEL, Porter's Five Forces analysis</li>
+                        <li>Business model evaluation</li>
+                    </ul>
+                    
+                    <h4 class="font-semibold navy-text mb-2">Delivery Includes:</h4>
+                    <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+                        <li>Well-researched case analysis</li>
+                        <li>Professional formatting (APA/Harvard)</li>
+                        <li>Reference citations</li>
+                        <li>Financial models (Excel if required)</li>
+                        <li>Presentation slides (on request)</li>
+                    </ul>
+                </div>
+                
+                <div class="flex justify-between items-center pt-4 border-t">
+                    <div>
+                        <span class="text-lg font-semibold navy-text">Starting from $45</span>
+                        <p class="text-sm text-gray-500">Price varies based on complexity and urgency</p>
+                    </div>
+                    <a href="https://wa.me/923029015909?text=Hi%20Dr.%20Jamshed,%20I%20need%20help%20with%20MBA%20Case%20Study." class="gold-bg navy-text px-6 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300">
+                        <i class="fab fa-whatsapp mr-2"></i> Order Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Finance Modal -->
+    <div id="finance-modal" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-2xl font-bold navy-text">Finance Assignments</h3>
+                    <button onclick="closeModal('finance-modal')" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-file-invoice-dollar text-5xl text-gray-500"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Financial analysis, ratio calculations, investment appraisal, and corporate finance problems with Excel solutions and detailed explanations.
+                    </p>
+                    
+                    <h4 class="font-semibold navy-text mb-2">What We Cover:</h4>
+                    <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+                        <li>Financial statement analysis</li>
+                        <li>Ratio and trend analysis</li>
+                        <li>Time value of money calculations</li>
+                        <li>Capital budgeting techniques</li>
+                        <li>Risk and return analysis</li>
+                        <li>Portfolio management</li>
+                        <li>Derivatives and options pricing</li>
+                        <li>Corporate valuation</li>
+                    </ul>
+                    
+                    <h4 class="font-semibold navy-text mb-2">Delivery Includes:</h4>
+                    <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+                        <li>Complete solution with calculations</li>
+                        <li>Excel spreadsheet with formulas</li>
+                        <li>Step-by-step explanations</li>
+                        <li>Graphical representations</li>
+                        <li>Reference citations if required</li>
+                    </ul>
+                </div>
+                
+                <div class="flex justify-between items-center pt-4 border-t">
+                    <div>
+                        <span class="text-lg font-semibold navy-text">Starting from $30</span>
+                        <p class="text-sm text-gray-500">Price varies based on complexity and urgency</p>
+                    </div>
+                    <a href="https://wa.me/923029015909?text=Hi%20Dr.%20Jamshed,%20I%20need%20help%20with%20Finance%20Assignment." class="gold-bg navy-text px-6 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300">
+                        <i class="fab fa-whatsapp mr-2"></i> Order Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Modal -->
+    <div id="quiz-modal" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-2xl font-bold navy-text">Timed Quizzes</h3>
+                    <button onclick="closeModal('quiz-modal')" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-clock text-5xl text-gray-500"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Real-time support for online quizzes and timed assessments with guaranteed accuracy and complete confidentiality.
+                    </p>
+                    
+                    <h4 class="font-semibold navy-text mb-2">What We Cover:</h4>
+                    <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+                        <li>Multiple choice questions (MCQs)</li>
+                        <li>Short answer questions</li>
+                        <li>Problem-solving questions</li>
+                        <li>Case-based questions</li>
+                        <li>Programming quizzes</li>
+                        <li>Mathematics and statistics</li>
+                        <li>Business and management</li>
+                        <li>Engineering subjects</li>
+                    </ul>
+                    
+                    <h4 class="font-semibold navy-text mb-2">How It Works:</h4>
+                    <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+                        <li>Share quiz details and timing in advance</li>
+                        <li>We schedule an expert for your time slot</li>
+                        <li>Real-time support during your quiz</li>
+                        <li>Immediate answers with explanations</li>
+                        <li>100% confidentiality guaranteed</li>
+                    </ul>
+                </div>
+                
+                <div class="flex justify-between items-center pt-4 border-t">
+                    <div>
+                        <span class="text-lg font-semibold navy-text">Starting from $20/hour</span>
+                        <p class="text-sm text-gray-500">Price varies based on subject and complexity</p>
+                    </div>
+                    <a href="https://wa.me/923029015909?text=Hi%20Dr.%20Jamshed,%20I%20need%20help%20with%20Timed%20Quiz." class="gold-bg navy-text px-6 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300">
+                        <i class="fab fa-whatsapp mr-2"></i> Order Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Year Project Modal -->
+    <div id="fyp-modal" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-2xl font-bold navy-text">Final Year Projects</h3>
+                    <button onclick="closeModal('fyp-modal')" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-graduation-cap text-5xl text-gray-500"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        End-to-end final year project support including proposal, implementation, documentation, and presentation preparation.
+                    </p>
+                    
+                    <h4 class="font-semibold navy-text mb-2">What We Cover:</h4>
+                    <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+                        <li>Computer science/IT projects</li>
+                        <li>Electrical/electronics projects</li>
+                        <li>Business/management projects</li>
+                        <li>Project proposal writing</li>
+                        <li>System design and implementation</li>
+                        <li>Testing and validation</li>
+                        <li>Comprehensive documentation</li>
+                        <li>Presentation preparation</li>
+                    </ul>
+                    
+                    <h4 class="font-semibold navy-text mb-2">Delivery Includes:</h4>
+                    <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+                        <li>Complete source code/files</li>
+                        <li>Project report (60-100 pages)</li>
+                        <li>User manual</li>
+                        <li>Presentation slides</li>
+                        <li>Working demonstration</li>
+                        <li>Viva preparation support</li>
+                    </ul>
+                </div>
+                
+                <div class="flex justify-between items-center pt-4 border-t">
+                    <div>
+                        <span class="text-lg font-semibold navy-text">Starting from $150</span>
+                        <p class="text-sm text-gray-500">Price varies based on project scope</p>
+                    </div>
+                    <a href="https://wa.me/923029015909?text=Hi%20Dr.%20Jamshed,%20I%20need%20help%20with%20Final%20Year%20Project." class="gold-bg navy-text px-6 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300">
+                        <i class="fab fa-whatsapp mr-2"></i> Order Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Service filtering
+        function filterServices(category) {
+            const serviceCards = document.querySelectorAll('.service-card');
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            
+            filterBtns.forEach(btn => {
+                btn.classList.remove('active', 'navy-bg', 'text-white');
+                btn.classList.add('border', 'navy-text', 'border-gray-300');
+            });
+            
+            event.target.classList.add('active', 'navy-bg', 'text-white');
+            event.target.classList.remove('border', 'navy-text', 'border-gray-300');
+            
+            serviceCards.forEach(card => {
+                if (category === 'all' || card.classList.contains(category)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+        
+        // Modal functions
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        }
+        
+        // Form submission
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send the data to a server
+            // For demo, we'll just show an alert and clear the form
+            alert(`Thank you, ${name}! Your message has been sent. We'll contact you soon.`);
+            contactForm.reset();
+            
+            // Alternatively, redirect to WhatsApp with the message
+            // const whatsappUrl = `https://wa.me/923029015909?text=Name:%20${encodeURIComponent(name)}%0AEmail:%20${encodeURIComponent(email)}%0ASubject:%20${encodeURIComponent(subject)}%0AMessage:%20${encodeURIComponent(message)}`;
+            // window.open(whatsappUrl, '_blank');
+        });
+        
+        // Scroll animations
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.service-card, .testimonial-card');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.classList.add('fade-in');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
